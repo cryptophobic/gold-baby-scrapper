@@ -138,4 +138,3 @@ class Scrap {
     }
 }
 
-(new Scrap())->run();
