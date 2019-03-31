@@ -1,6 +1,6 @@
 <?php
 
-include "autoloader.php";
+include __DIR__."autoloader.php";
 
 $shortopts = "sd";
 $longopts = ['scrap', 'download'];
