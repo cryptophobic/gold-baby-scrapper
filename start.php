@@ -2,8 +2,8 @@
 
 include __DIR__."/autoloader.php";
 
-$shortopts = "sd";
-$longopts = ['scrap', 'download'];
+$shortopts = "sde";
+$longopts = ['scrap', 'download', 'exportFile'];
 
 $options = getopt($shortopts, $longopts);
 
@@ -24,4 +24,9 @@ if (isset($options['d']))
 if (isset($options['k']))
 {
     (new Scrap())->run_price();
+}
+
+if (isset($options['e']))
+{
+    (new ExportToCsv(__DIR__.'/file.csv'))->run();
 }
