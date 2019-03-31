@@ -20,3 +20,8 @@ if (isset($options['d']))
         print_r($e);
     }
 }
+
+if (isset($options['k']))
+{
+    (new Scrap())->run_price();
+}
