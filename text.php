@@ -1,13 +1,5 @@
 <?php
 
-declare(strict_types = 1);
+$str = mb_convert_case('люди', MB_CASE_TITLE, "UTF-8");
 
-/**
- * @param int $a
- */
-function help(float $a)
-{
-    print_r($a);
-}
-
-help(3/2);
+var_dump($str);
