@@ -21,6 +21,11 @@ if (isset($options['d']))
     }
 }
 
+if (isset($options['k']))
+{
+    (new Scrap())->run_price();
+}
+
 if (isset($options['e']))
 {
     (new ExportToCsv(__DIR__.'/file.csv'))->run();
